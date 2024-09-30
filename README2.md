@@ -63,5 +63,5 @@ Open your browser and navigate to http://localhost:3001/notes to access the appl
 
 ## Links
 
-- GitHub Repository: [https://github.com/yourusername/note-tation](https://github.com/yourusername/note-tation)
-- Deployed Application: [https://your-deployed-url.com](https://your-deployed-url.com)
+- GitHub Repository: (https://github.com/yourusername/note-tation)
+- Deployed Application: (https://your-deployed-url.com)
