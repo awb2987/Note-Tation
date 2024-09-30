@@ -159,7 +159,7 @@ const getAndRenderNotes = () =>
     });
 
 // Handle new note view
-const handleNewNoteView = (e) => {
+const handleNewNoteView = () => {
   activeNote = {};
   show(clearBtn);
   renderActiveNote();
