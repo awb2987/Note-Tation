@@ -40,8 +40,9 @@ const hide = (elem) => {
 let activeNote = {};
 
 // FETCH notes from the API
-const getNotes = () =>
-  fetch('/api/notes').then(response => response.json());
+const getNotes = () => {
+  return fetch('/api/notes').then(response => response.json());
+};
 
 // SAVE a new note via the API
 const saveNote = (note) =>
@@ -72,7 +73,10 @@ const handleNoteSave = (e) => {
       getAndRenderNotes();
       renderActiveNote();
     })
-    .catch(err => console.error('Error saving note:', err));
+    .catch(err => {
+      console.error('Error saving note:', err);
+      alert('Failed to save note. Please try again.');
+    });
 };
 
 // HANDLE clearing the note fields
@@ -146,7 +150,13 @@ const renderNoteList = async (notes) => {
 };
 
 // FETCH notes and render them on page load
-const getAndRenderNotes = () => getNotes().then(renderNoteList).catch(err => console.error('Error fetching notes:', err));
+const getAndRenderNotes = () => 
+  getNotes()
+    .then(renderNoteList)
+    .catch(err => {
+      console.error('Error fetching notes:', err);
+      alert('Failed to fetch notes. Please try again.');
+    });
 
 // Handle new note view
 const handleNewNoteView = (e) => {
@@ -169,8 +179,13 @@ const handleNoteDelete = (e) => {
   
   fetch(`/api/notes/${noteId}`, {
     method: 'DELETE'
-  }).then(() => {
+  })
+  .then(() => {
     getAndRenderNotes();
     renderActiveNote();
-  }).catch(err => console.error('Error deleting note:', err));
+  })
+  .catch(err => {
+    console.error('Error deleting note:', err);
+    alert('Failed to delete note. Please try again.');
+  });
 };
