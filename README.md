@@ -60,9 +60,9 @@ npm start
 Open your web browser and navigate to `http://localhost:3000` to use the Note-Tation app.
 
 ## Screenshots
-![Landing Page](./assets/screenshot1.png)
-![Notes Page](./assets/screenshot2.png)
+![Landing Page](./public/assets/images/Screenshot-of-landing-page.png)
+![Notes Page](./public/assets/images/Screenshot-of-notes-page.png)
 
 ## Links
-- GitHub Repository: [yourusername/note-tation](https://github.com/awb2987/note-tation)
-- Deployed Application: [Note-Tation Live](https://your-deployed-url.com)
+- GitHub Repository: [GitHub Repository](https://github.com/awb2987/note-tation)
+- Deployed Application: [Render Deployed URL](https://note-tation.onrender.com/)
