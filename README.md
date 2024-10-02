@@ -37,7 +37,7 @@ SO THAT I can organize my thoughts and keep track of tasks I need to complete
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/note-tation.git
+   git clone https://github.com/awb2987/note-tation.git
    ```
 2. Navigate to the project directory:
    ```bash
@@ -50,10 +50,6 @@ SO THAT I can organize my thoughts and keep track of tasks I need to complete
 4. Install uuid extension
 ```bash
    npm install uuid
-```
-5. Install express extension
-```bash
-   npm install express
 ```
 
 ## Usage

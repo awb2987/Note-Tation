@@ -5,6 +5,7 @@ const { v4: uuidv4 } = require('uuid');
 
 const router = express.Router();
 const dbFilePath = path.join(__dirname, '../db/db.json');
+console.log('DB file path:', dbFilePath);
 
 // GET all notes
 router.get('/notes', async (req, res) => {
